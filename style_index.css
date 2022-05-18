@@ -72,23 +72,207 @@ header {
   flex-wrap: wrap;
 }
 
-.menu_btn {
+/* /* .menu_btn {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 32px;
   height: 23px;
-  margin-right: 33px;
+  margin-right: 33px; 
+} */
+
+/* началао выпадающего меню */
+.menu_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 32px;
 }
+
+.menu_btn:hover span,
+.menu_btn:hover span::before,
+.menu_btn:hover span::after {
+  background-color: orange;
+}
+
+.menu_btn:active span,
+.menu_btn:active span::before,
+.menu_btn:active span::after {
+  background-color: red;
+}
+
+.menu_btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+}
+
+.menu_btn span::before,
+.menu_btn span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.menu_btn span::after {
+  top: 10px;
+}
+
+#menu_switch {
+  /*была решетка в начале вместо точки */
+  display: none;
+}
+
+#menu_switch:checked~.menu_list {
+  /*была решетка в начале вместо точки */
+  display: block;
+}
+
+#menu_switch:checked~.page_header_banner {
+  /*была решетка в начале вместо точки */
+  border: 8px solid red;
+}
+
+.menu_list {
+  display: none;
+  width: 100%;
+  max-width: 232px;
+  min-height: 764px;
+  /* значение в свойстве min-height удобно задать через переменную равную высоте второго блока */
+  padding: 16px 33px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: 75px;
+  /* значение в свойстве top удобно задать через переменную равную высоте первого блока */
+  right: 0;
+  z-index: 20;
+}
+
+.menu_list_close_btn {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 170px;
+}
+
+.menu_list_close_btn::before,
+.menu_list_close_btn::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #6F6E6E;
+  border-radius: 10px;
+  position: absolute;
+  top: 5px;
+  left: -3px;
+  transform: rotate(45deg);
+}
+
+.menu_list_close_btn::after {
+  transform: rotate(-45deg)
+}
+
+.menu_list_close_btn:hover::before,
+.menu_list_close_btn:hover::after {
+  background: #B7B6B6;
+}
+
+.menu_list_close_btn:active::before,
+.menu_list_close_btn:active::after {
+  background: #535353;
+}
+
+.menu_list_title {
+  display: block;
+  margin: 9px 0 24px 0;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.menu_title>a,
+.menu_list_item>a,
+.menu_sublist_item>a {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+}
+
+.menu_list_item {
+  list-style-type: none;
+}
+
+.menu_list_item>a {
+  display: block;
+  margin: 0 0 11px 0;
+  color: #F16D7F;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu_list_item:hover>a {
+  color: #9889D7;
+}
+
+.menu_list_item:active>a {
+  color: #9D2334;
+}
+
+.menu_sublist {
+  padding: 0 0 0 21.5px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.menu_sublist_item {
+  list-style-type: none;
+}
+
+.menu_sublist_item>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 11px 0;
+  color: #6F6E6E;
+}
+
+.menu_sublist_item a {
+  text-decoration: none;
+}
+
+.menu_sublist_item:hover a {
+  text-decoration: underline;
+}
+
+.menu_sublist_item:active a {
+  text-decoration: none;
+}
+
+/* конец выпадаюащего меню */
 
 .account_btn {
   text-decoration: none;
   margin-right: 33px;
 }
 
-/* .account_btn:hover {
-  fill: orange;
-} */
+
+
 .wish_btn {
   text-decoration: none;
   margin-right: 240px;
