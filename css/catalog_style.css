@@ -1,0 +1,180 @@
+/* Стили для шапки страницы каталога */
+.header-main {
+  display: flex;
+  background-color: #F8F3F4;
+  max-height: 148px;
+  width: 100%;
+
+  justify-content: space-around;
+
+}
+
+.header-main-left {
+  height: 148px;
+
+
+}
+
+.header-main-right {
+  height: 148px;
+
+}
+
+.header-main-left-title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
+
+}
+
+.header-breadcrumb {
+  display: flex;
+  list-style: none;
+  padding-top: 65px;
+  height: 148px;
+}
+
+.breadcrumb_list {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+
+}
+
+.header-breadcrumb .breadcrumb_list:after {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+li span {
+  color: #F16D7F;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+
+
+/* Стили для блока с карточками товара */
+
+/* .cards {
+  
+  width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  height: 581px;
+  width: 360px;
+  background: #F8F8F8;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.card:hover .card_btn {
+  display: flex;
+}
+
+.card:hover .card_btn:hover {
+  background-color: #ccc;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.card:hover .card_btn:hover svg {
+  fill: #000;
+}
+
+.card:hover .card_btn:active {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.card:hover .card_btn:active svg {
+  fill: #fff;
+}
+
+.card:hover .card_img {
+
+  filter: brightness(40%);
+
+}
+
+
+.card_btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 38.3%;
+  min-height: 43px;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 188px;
+  left: 32.7%;
+}
+
+
+
+.card_btn svg {
+
+  fill: #fff;
+  margin: 0 11px 0 0;
+
+}
+
+.card_info {
+  margin: 0%;
+  padding: 0%;
+}
+
+.card_h3 {
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin: 25px 0 12px 18px;
+}
+
+.card_p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin: 0 28px 0 16px;
+}
+
+.card_price {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+  margin-left: 18px;
+} */
