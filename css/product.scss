@@ -81,6 +81,7 @@
   max-width: 100%;
   background-color: #FFFFFF;
   margin-top: -65px;
+  width: 59%;
 
 
   &-header {
@@ -256,6 +257,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .main-item-btn {
@@ -305,15 +307,20 @@
   display: block;
   width: 63px;
   height: 3px;
+  border: 0;
+  color: #EF5B70;
   background-color: #EF5B70;
 }
 
 .line {
-  display: block;
-  width: 641px;
-  border-bottom: 1px solid #EAEAEA;
-  margin: 65px 250px 65px 250px;
-  // здесь марджины в 250пх влияют на ширину блока main-item-info
+  display: flex;
+  justify-content: center;
+  width: 60%;
+
+  border: 1px solid #EAEAEA;
+  clear: both;
+  background: #EAEAEA;
+  margin: 65px 0 65px 0;
 
 }
 
@@ -323,6 +330,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+
 }
 
 /* стили для блока color */
