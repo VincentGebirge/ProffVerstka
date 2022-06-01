@@ -1,3 +1,10 @@
+body {
+  font-family: 'Lato';
+  font-style: normal;
+
+}
+
+
 .account_btn {
   text-decoration: none;
   margin-right: 33px;
@@ -54,32 +61,48 @@ svg:hover {
   margin-left: 63.5px;
 }
 
-.vertical_line {
-  height: 92px;
-  width: 12px;
-  background-color: #F16D7F;
-  margin-right: 16px;
+
+.block_top_h {
+  display: block;
+  width: 100%;
+  max-width: 377px;
+  margin: 0 95px 87px 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 49px;
+  line-height: 51.6px;
+  color: #222222;
+  text-transform: uppercase;
+  position: relative;
+
 }
 
-.pink_txt {
-  margin: 0;
+.block_top_h::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 92px;
+  background-color: #F16D7F;
+  position: absolute;
+  top: 0;
+  left: -28px;
+}
+
+.medium_txt {
+
+  display: block;
   font-weight: 700;
   font-size: 32px;
   line-height: 38.4px;
-  text-transform: uppercase;
-  font-family: lato;
+}
+
+.medium_txt span {
   color: #F16D7F;
 }
 
-.h3_block_top {
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 57.6px;
-  text-transform: uppercase;
-  font-family: lato;
-  margin: 0;
-  padding: 0;
-}
+
+
+
 
 .h4_block_top {
   margin: 0;
@@ -94,19 +117,23 @@ svg:hover {
 /* Секция с карточками-баннерами */
 .blocks {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 65px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.blocks_top {
+/* .blocks_top {
 
   display: flex;
   justify-content: center;
   margin-top: 65px;
   margin-bottom: 30px;
-}
+} */
 
-.block1 {
+.block-first {
   background-image: url(../img/block1.png);
   height: 260px;
   width: 360px;
@@ -117,7 +144,7 @@ svg:hover {
   background-blend-mode: darken;
 }
 
-.block2 {
+.block-second {
   background-image: url(../img/block2.png);
   height: 260px;
   width: 360px;
@@ -129,7 +156,7 @@ svg:hover {
   background-blend-mode: darken;
 }
 
-.block3 {
+.block-third {
   background-image: url(../img/block3.png);
   height: 260px;
   width: 360px;
@@ -140,7 +167,7 @@ svg:hover {
   background-blend-mode: darken;
 }
 
-.block4 {
+.block-four {
   background-image: url(../img/block4.png);
   height: 180px;
   width: 1140px;
@@ -149,6 +176,8 @@ svg:hover {
   background-repeat: no-repeat;
   background-color: rgba(33, 22, 22, 0.7);
   background-blend-mode: darken;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .block_link {
@@ -187,7 +216,7 @@ svg:hover {
   color: #F16D7F;
 }
 
-.block4_link {
+.block-four_link {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -221,7 +250,7 @@ svg:hover {
   height: 150px;
 }
 
-.art_block_h3 {
+.art_block_h {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -322,7 +351,7 @@ svg:hover {
   padding: 0%;
 }
 
-.card_h3 {
+.card_h {
   text-transform: uppercase;
   font-family: 'Lato';
   font-style: normal;
