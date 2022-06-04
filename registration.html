@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart</title>
+  <title>Registration</title>
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
-  <link rel="preconnect" href="css/cart.css">
-  <link rel="stylesheet" href="css/cart.css">
-
+  <link rel="preconnect" href="css/registration.css">
+  <link rel="stylesheet" href="css/registration.css">
 </head>
 
 <body>
+
   <header class="top_header">
     <div class="left_block">
       <a href="index.html">
@@ -144,7 +144,7 @@
   <main>
     <header class="header-main">
       <div class="header-main-left">
-        <h3 class="header-main-left-title">Shopping cart</h3>
+        <h3 class="header-main-left-title">Registration</h3>
       </div>
       <!-- <div class="header-main-right">
         <ul class="header-breadcrumb">
@@ -155,82 +155,80 @@
       </div> -->
     </header>
 
-    <section>
-      <div class="items">
+    <section class="section-main">
+      <form action="#" class="section-main-form">
+        <div class="section-main-form-top">
+          <h3 class="section-main-form-h">Your Name</h3>
 
-        <div class="card-first">
-          <img src="img/cart_item_top.png" alt="man in hoodi" class="card-fist-img">
-          <div class="card-first-info">
-            <div class="card-first-info-header">
-              <h3 class="card-first-h">Mango people T&ndash;shirt</h3>
-              <a href="#" class="card-first-close-btn"></a>
-            </div>
-            <p class="card-first-p">Price: <span>$300</span></p>
-            <p class="card-first-p">Color: Red</p>
-            <p class="card-first-p">Size: Xl</p>
-            <div class="card-first-info-bottom">
-              <p class="card-first-p">Quantity: </p>
-              <input type="number" value="2" name="quantity" class="card-first-quantity">
-            </div>
+
+          <input type="text" value="First Name" id="first-name" class="section-main-form-input">
+          <label for="first-name"></label>
+
+          <input type="text" value="Last Name" id="last-name" class="section-main-form-input">
+          <label for="last-name"></label>
+
+          <div class="section-main-form-radio-block">
+            <input type="radio" value="Male" name="gender" id="male" checked>
+            <label for="male" class="section-main-form-radio">Male</label>
+
+            <input type="radio" value="Female" name="gender" id="female">
+            <label for="female" class="section-main-form-radio">Female</label>
           </div>
-
-        </div>
-        <div class="card-second">
-          <img src="img/cart_item_bottom.png" alt="man in t-shirt" class="card-second-img">
-          <div class="card-second-info">
-            <div class="card-second-info-header">
-              <h3 class="card-second-h">Mango people T&ndash;shirt</h3>
-              <a href="#" class="card-second-close-btn"></a>
-            </div>
-
-            <p class="card-second-p">Price: <span>$300</span></p>
-            <p class="card-second-p">Color: Red</p>
-            <p class="card-second-p">Size: Xl</p>
-            <div class="card-second-info-bottom">
-              <p class="card-second-p">Quantity: </p>
-              <input type="number" value="2" name="quantity" class="card-second-quantity">
-            </div>
-
-
-          </div>
-
-        </div>
-        <div class="items-btn">
-          <button class="items-btn-clear-shopping">Clear shopping cart</button>
-          <button class="items-btn-continue">Continue shopping</button>
         </div>
 
+        <div class="section-main-form-bottom">
+          <h3 class="section-main-form-h">Login details</h3>
+
+          <input type="text" value="Email" id="email" class="section-main-form-input">
+          <label for="email"></label>
+
+          <input type="text" value="Password" id="password" class="section-main-form-input">
+          <label for="password"></label>
+          <p class="section-main-form-p">Please use 8&nbsp;or more characters, with at&nbsp;least 1&nbsp;number and
+            a&nbsp;mixture of&nbsp;uppercase and lowercase letters</p>
+
+          <input type="submit" class="section-main-form-btn" name="button-submit" id="button" value="Join now &#8594;">
+          <label for="button"></label>
+        </div>
+      </form>
+
+
+
+
+      <div class="section-main-article">
+        <h3 class="section-main-article-h">Loyalty has its perks</h3>
+
+        <p class="section-main-article-p">Get in&nbsp;on&nbsp;the loyalty program where you can earn points and unlock
+          serious perks. Starting with these as&nbsp;soon as&nbsp;you join:</p>
+        <ul class="section-main-article-ul">
+          <li class="section-main-article-li">
+            15% off welcome offer
+          </li>
+
+          <li class="section-main-article-li">
+            Free shipping, returns and exchanges on all orders
+          </li>
+
+          <li class="section-main-article-li">
+            $10 off a purchase on your birthday
+          </li>
+
+          <li class="section-main-article-li">
+            Early access to products
+          </li>
+
+          <li class="section-main-article-li">
+            Exclusive offers & rewards
+          </li>
+
+        </ul>
       </div>
-      <div class="cart-info">
-        <h3 class="cart-info-h">Shipping adress</h3>
-        <form action="cart-info-shipping">
-          <div>
-            <input type="text" value="Country" class="cart-info-input">
-          </div>
-          <div>
-            <input type="text" value="State" class="cart-info-input">
-          </div>
-          <div>
-            <input type="text" value="Postcode / ZIP" class="cart-info-input">
-          </div>
-
-          <button class="cart-info-btn">Get a quote</button>
-        </form>
-        <div class="total-check">
-          <div class="total-check-top">
-            <p class="total-check-p">Sub total&nbsp&nbsp&nbsp&nbsp<span>$900</span></p>
-            <h3 class="total-check-h">Grand total&nbsp&nbsp&nbsp&nbsp<span>$900</span></h3>
-          </div>
-          <!-- возможно, нужно будет удалить эту линию, потому что можно будет привязать бордер-топ к кнопке -->
-          <hr class="total-check-line">
-          <button class="total-check-btn">Procced to checkout</button>
 
 
-        </div>
-
-      </div>
 
     </section>
+
+
 
 
 
