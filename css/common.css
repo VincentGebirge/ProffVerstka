@@ -7,18 +7,22 @@
 
   src: local("Lato"),
 
-    url("../webfonts/fa-regular-400.woff2") format("woff2"),
-
-    url("../webfonts/fa-regular-400.ttf") format("ttf");
+    url("../webfonts/Lato-Black.ttf") format("ttf"),
+    url("../webfonts/Lato-BlackItalic.ttf") format("ttf"),
+    url("../webfonts/Lato-Bold.ttf") format("ttf"),
+    url("../webfonts/Lato-BoldItalic.ttf") format("ttf"),
+    url("../webfonts/Lato-Italic.ttf") format("ttf"),
+    url("../webfonts/Lato-Light.ttf") format("ttf"),
+    url("../webfonts/Lato-LightItalic.ttf") format("ttf"),
+    url("../webfonts/Lato-Regular.ttf") format("ttf"),
+  ;
 
 }
-
-
 
 body {
   margin: 0;
   padding: 0;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   font-family: Lato;
 }
 
@@ -27,12 +31,17 @@ header {
   background-color: #222222;
   max-height: 75px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.header-wrp {
+  display: flex;
+  width: 1140px;
 }
 
 .top_header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .header_logo {
@@ -45,7 +54,7 @@ header {
   min-height: 75px;
   display: flex;
   align-items: center;
-  margin-left: 231px;
+
 }
 
 /* Кнопка поиска */
@@ -116,6 +125,7 @@ header {
   align-items: center;
   justify-content: end;
   flex-wrap: wrap;
+
 }
 
 /* Выпадающее меню */
@@ -318,7 +328,7 @@ svg:hover {
 
 .wish_btn {
   text-decoration: none;
-  margin-right: 240px;
+
   position: relative;
 }
 
@@ -482,10 +492,10 @@ li span {
   flex-direction: column;
 
   align-items: center;
-  width: 40%;
+  width: 50%;
   height: 448px;
-  justify-content: center;
-  margin-left: 10%;
+  /* justify-content: center; */
+  margin-top: 87px;
 }
 
 .left_sub_d {
@@ -595,13 +605,15 @@ li span {
   font-size: 16px;
   line-height: 19px;
   color: #FBFBFB;
+  margin: 0;
+  padding: 0;
 }
 
 .copyright_left {
   display: flex;
-  justify-content: center;
-  width: 45%;
-  margin-left: 5%;
+  /* justify-content: center; */
+  width: 35%;
+  margin-left: 15%;
 }
 
 .copyright_right {
@@ -630,4 +642,128 @@ li span {
 .fa-brands:hover {
   color: #FFFFFF;
   background-color: #F16D7F;
+}
+
+
+
+/*                  МЕДИА-запросы */
+
+
+/*                  Планшетная версия */
+
+@media (max-width: 768px) and (min-width: 376px) {
+
+
+  .right_block {
+    margin-right: 36px;
+  }
+
+  .left_block {
+    margin-left: 36px;
+  }
+
+  .header-wrp {
+    width: 100%;
+  }
+
+  .search-icon-form {
+    margin-left: 41px;
+  }
+
+  .copyright_left {
+    margin-left: 32px;
+    width: 50%;
+  }
+
+  .copyright_right {
+    justify-content: end;
+    margin-right: 32px;
+  }
+}
+
+
+
+/*                    Модильная версия                    */
+@media (max-width:375px) {
+  .right_block {
+    margin-right: 26px;
+  }
+
+  .left_block {
+    margin-left: 16px;
+  }
+
+  .account_btn {
+    display: none;
+  }
+
+  .wish_btn {
+    display: none;
+  }
+
+  .menu_btn {
+    margin: 0;
+  }
+
+  .search-icon-form {
+    margin-left: 41px;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left_sub {
+    margin: 0 auto;
+  }
+
+  .right_sub {
+    margin: 0 auto;
+  }
+
+  .subscribe {
+    padding: 54px 0 110px 0;
+    background-size: cover;
+    background-position: 1px;
+    flex-direction: column;
+  }
+
+  .right_sub {
+    width: 100%;
+  }
+
+  .sub_p {
+    text-align: center;
+  }
+
+  .copyright {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 143px;
+  }
+
+  .copyright_right {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .copyright_left {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 25px;
+
+  }
+
+  .copyright_txt {
+    text-align: center;
+  }
+
+
+
+
+
+
 }
