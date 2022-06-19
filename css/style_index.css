@@ -1,6 +1,7 @@
 body {
   font-family: 'Lato';
   font-style: normal;
+  width: 100%;
 
 }
 
@@ -18,12 +19,6 @@ svg:hover {
   fill: orange;
 }
 
-.wish_btn {
-  text-decoration: none;
-  margin-right: 240px;
-  position: relative;
-}
-
 .badge {
   position: absolute;
   top: -8px;
@@ -38,24 +33,32 @@ svg:hover {
 /* Конец блока хеадер с кнопками */
 /* Блок баннеров */
 .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #F1E4E6;
 }
 
+.top-wrp {
+  width: 1140px;
+  display: flex;
+  justify-content: center;
+}
+
 .top__left {
-  width: 50%;
+  width: 53%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  margin-left: -120px;
 }
 
 .top__right {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   margin-left: 63.5px;
@@ -125,13 +128,13 @@ svg:hover {
   width: 100%;
 }
 
-/* .blocks_top {
+.blocks-wrp {
 
   display: flex;
   justify-content: center;
-  margin-top: 65px;
-  margin-bottom: 30px;
-} */
+  width: 1140px;
+  flex-wrap: wrap;
+}
 
 .block-first {
   background-image: url(../img/block1.png);
@@ -347,8 +350,8 @@ svg:hover {
 }
 
 .card_info {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 .card_h {
@@ -399,9 +402,286 @@ svg:hover {
   text-align: center;
   word-break: break-all;
   margin-top: 48px;
+  transition: 0.3s linear;
 }
 
 .product_btn:hover {
   background-color: #F26376;
   color: #fff;
+}
+
+.product_btn:active {
+  transition: transform 0.3s linear;
+  transform: scale(0.9);
+
+}
+
+
+
+/*                  МЕДИА-запросы */
+
+
+/*                  Планшетная версия */
+
+@media (max-width: 768px) and (min-width: 376px) {
+
+
+  .blocks {
+    margin-top: 20px;
+  }
+
+  .block_top_h {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+    margin: 0 auto;
+  }
+
+  .medium_txt {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .block_h {
+    margin: 0 auto;
+  }
+
+  .top__right {
+    margin: 0 auto;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .top__left {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .man_banner {
+    height: 368px;
+  }
+
+  .blocks-wrp {
+    width: 100%;
+  }
+
+  .block-first,
+  .block-second,
+  .block-third {
+    width: 232px;
+    height: 168px;
+    display: flex;
+    align-items: center;
+  }
+
+  .block-four {
+    width: 735px;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+
+  }
+
+  .block-four_link {
+    margin: 0 auto;
+  }
+
+  .p_block {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .block-second {
+    margin: 0 20px 0 20px;
+  }
+
+  .cards {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .top-wrp {
+    width: 100%;
+  }
+
+  .article_block {
+    width: 50%;
+  }
+
+  .block_link {
+    margin: 0 auto;
+  }
+
+  .bottom_section {
+    flex-direction: column;
+    height: 100%;
+    padding: 48px 0 16px 0;
+  }
+
+  .feature {
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+  }
+
+  .subscribe {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-size: cover;
+    padding: 54px 0 140px 0;
+  }
+
+  .left_sub {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .right_sub {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .copyright_left {
+    margin-left: 32px;
+    width: 50%;
+  }
+
+  .copyright_right {
+    justify-content: end;
+    margin-right: 32px;
+  }
+}
+
+
+/*                    Модильная версия                    */
+
+@media (max-width:375px) {
+
+  .top__left {
+    display: none;
+  }
+
+  .top__right {
+    height: 375px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .block_top_h {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 38px;
+    margin: 0 auto;
+  }
+
+  .block_h {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .medium_txt {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .block_top_h::before {
+    height: 61px;
+    width: 12px;
+  }
+
+  .blocks-wrp {
+    width: 100%;
+
+  }
+
+  .block-first {
+    margin-bottom: 32px;
+    width: 343px;
+    height: 247px;
+  }
+
+  .block-second {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 343px;
+    height: 247px;
+  }
+
+  .block-third {
+    margin-bottom: 32px;
+    width: 343px;
+    height: 247px;
+
+  }
+
+  .block-four {
+    width: 343px;
+    height: 111px;
+
+  }
+
+  .block-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+  }
+
+  .block-four_link {
+    margin: 0 auto;
+  }
+
+  .article_block {
+    width: 100%;
+
+  }
+
+  .art_block_p {
+    text-align: center;
+  }
+
+  .cards {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product_btn {
+    margin-top: 11px;
+  }
+
+  .bottom_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 48px 0 34px 0;
+  }
+
+  .feature {
+    margin: 0 auto;
+    margin-bottom: 47px;
+
+  }
+
 }

@@ -135,13 +135,16 @@
 
 /* Стили для блока с карточками товара */
 .items-cards {
-  margin-top: 60px;
-  width: 100%;
+
+  max-width: 1140px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 128px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 60px;
 
 }
 
@@ -686,4 +689,191 @@ button:focus-visible {
   position: absolute;
   top: 1px;
   left: -23.5px;
+}
+
+
+
+
+
+/*                   Медиа-запросы                                  */
+
+/*                  Медиа-запросы для планшета                      */
+
+@media (max-width:768px) and (min-width:376px) {
+  .header-main {
+    justify-content: space-between;
+
+    &-left {
+      margin-left: 16px;
+    }
+
+    &-right {
+      margin-right: 16px;
+    }
+  }
+
+  .main-item-info-grey-border {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .items-cards {
+    width: 98%;
+
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 129px;
+  }
+
+  .card {
+    margin: 0 auto;
+    margin-bottom: 129px;
+  }
+
+  .card3 {
+    display: none;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-size: cover;
+    padding: 54px 0 140px 0;
+  }
+
+  .left_sub {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .right_sub {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+
+
+
+
+/*                  Медиа-запрос для мобильного                       */
+
+@media (max-width: 375px) {
+
+  .header-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 143px;
+
+    &-left {
+      height: 40%;
+      margin: 0 auto;
+
+      &-title {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &-right {
+      height: 40%;
+      margin: 0 auto;
+    }
+  }
+
+  .header-breadcrumb {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .top-item {
+    height: 624px;
+    position: relative;
+
+    &-left {
+      position: absolute;
+      left: 0px;
+    }
+
+    &-right {
+      position: absolute;
+      right: 0px;
+    }
+
+    &-img img {
+      margin: 0 auto;
+      width: 100%;
+
+    }
+  }
+
+  .main-item-info {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 49px;
+
+    &-grey-border {
+      width: 100%;
+      margin: 0 auto;
+      justify-content: center;
+    }
+  }
+
+  .items-cards {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+
+  .card2 {
+    display: none;
+  }
+
+  .list-quantity {
+    width: 100%;
+
+    &-btn-title {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    &-btn-title svg {
+      left: 58px;
+    }
+  }
+
+  .list-size {
+    width: 100%;
+
+    &-btn-title {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  .list-color {
+    width: 100%;
+
+    &-btn-title {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  .subscribe {
+
+    margin-top: 64px;
+  }
 }

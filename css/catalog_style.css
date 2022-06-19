@@ -219,7 +219,7 @@ button:focus-visible {
   margin: 0 0 6px 0;
   position: relative;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -495,7 +495,7 @@ button:focus-visible {
   margin: 0 0 6px 0;
   position: relative;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -615,7 +615,7 @@ button:focus-visible {
   margin: 0 0 6px 0;
   position: relative;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -795,4 +795,244 @@ button:focus-visible {
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
+}
+
+
+
+/*                   Медиа-запросы                                  */
+
+/*                  Медиа-запросы для планшета                      */
+
+@media (max-width:768px) and (min-width:376px) {
+  article {
+    width: 100%;
+  }
+
+  .check-items {
+    width: 100%;
+
+  }
+
+
+
+  .check-items-right {
+    width: 42%;
+  }
+
+  .cards {
+    width: 98%;
+    justify-content: space-around;
+  }
+
+  .card-tablet-none {
+    display: none;
+  }
+
+  .card {
+    margin-bottom: 16px;
+  }
+
+  .bottom_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 48px 0 34px 0;
+  }
+
+  .feature {
+    margin: 0 auto;
+    margin-bottom: 47px;
+
+  }
+
+  .subscribe {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-size: cover;
+    padding: 54px 0 140px 0;
+  }
+
+  .left_sub {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .right_sub {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .copyright_left {
+    margin-left: 32px;
+    width: 50%;
+  }
+
+  .copyright_right {
+    justify-content: end;
+    margin-right: 32px;
+  }
+}
+
+
+
+
+
+/*                  Медиа-запрос для мобильного                       */
+
+@media (max-width: 375px) {
+
+  .header-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .header-main-left {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    padding-top: 24px;
+
+  }
+
+  .header-main-right {
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 46px;
+  }
+
+  .header-breadcrumb {
+    height: 100%;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  .check-items {
+    width: 100%;
+
+  }
+
+  .cards {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filter-btn span {
+    display: none;
+  }
+
+  .filter-btn svg {
+    width: 35px;
+    height: 25px;
+  }
+
+  .filter-list-wrp {
+    width: 140px;
+  }
+
+  .check-items-left {
+    width: 15%;
+    justify-content: center;
+  }
+
+  .check-items-right {
+    width: 70%;
+  }
+
+  .filter {
+    width: 100%;
+    padding: 0;
+  }
+
+  .trending {
+    margin-right: 24px;
+  }
+
+  /* .size {
+    margin-right: 24px;
+  } */
+
+  .list-trending {
+    width: 107px;
+  }
+
+  .list-trending-btn-title svg {
+    top: 21%;
+    left: 95%;
+  }
+
+  .list-trending-btn-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #6F6E6E;
+
+  }
+
+  .list-size-btn-title svg {
+    top: 21%;
+    left: 63%;
+  }
+
+  .list-size {
+    width: 60px;
+  }
+
+  .price {
+    width: 100%;
+  }
+
+  .list-price {
+    width: 100%;
+  }
+
+  .list-price-btn-title svg {
+    top: 23%;
+    left: 70%;
+  }
+
+  .card-tablet-none {
+    display: none;
+  }
+
+  .card {
+    margin-bottom: 16px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .bottom_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 48px 0 34px 0;
+  }
+
+  .feature {
+    margin: 0 auto;
+    margin-bottom: 47px;
+
+  }
 }
