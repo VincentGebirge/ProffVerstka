@@ -813,6 +813,18 @@ button:focus-visible {
 
   }
 
+  .list-price {
+
+    width: 100%;
+  }
+
+  .list-price-btn-title svg {
+    fill: #6F6E6E;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+  }
+
 
 
   .check-items-right {
@@ -959,9 +971,7 @@ button:focus-visible {
     margin-right: 24px;
   }
 
-  /* .size {
-    margin-right: 24px;
-  } */
+
 
   .list-trending {
     width: 107px;
